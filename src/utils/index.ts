@@ -7,19 +7,6 @@ const api = axios.create({
     headers: { 'Content-Type': 'application/json' },
 })
 
-// api.interceptors.request.use(
-// 	async (axiosConfig) => {
-// 		const access_token = getRecord(STORAGE.ACCESS_TOKEN);
-// 		if (access_token && axiosConfig.headers) {
-// 			axiosConfig.headers['Authorization'] = 'Bearer ' + access_token;
-// 		}
-// 		return axiosConfig;
-// 	},
-// 	(error) => {
-// 		Promise.reject(error);
-// 	}
-// );
-
 api.interceptors.response.use(
     (response) => {
         return response

@@ -1,5 +1,5 @@
 export enum ROUTES {
-    HOME = 'products',
+    HOME = '',
     PRODUCT_DETAILS = 'products',
     CART = 'cart',
     WILD_CARD = '*',

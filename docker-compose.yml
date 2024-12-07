@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  frontend:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    volumes:
+      - ./src:/app
+    command: npm start
+    stdin_open: true

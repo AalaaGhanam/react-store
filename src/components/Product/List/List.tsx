@@ -75,14 +75,14 @@ const ListComponent = ({ productsItems, category, cart }: ListProps) => {
         },
     })
     const products = cart ? productsList : productsItems
-    const totalPrice = products.reduce((total, curVal) => {
+    const totalPrice = products?.reduce((total, curVal) => {
         return total + curVal.price
     }, 0)
     return (
         <>
             {contextHolder}
             <>
-                {products.length > 0 ? (
+                {products?.length > 0 ? (
                     <ListAnt
                         grid={{
                             gutter: 16,
@@ -110,7 +110,7 @@ const ListComponent = ({ productsItems, category, cart }: ListProps) => {
                                         <>
                                             <Col span={8}>
                                                 {t('PRODUCT.TOTAL.ITEMS')}{' '}
-                                                <b> {products.length}</b>
+                                                <b> {products?.length}</b>
                                             </Col>
                                             <Col span={8}>
                                                 {' '}
