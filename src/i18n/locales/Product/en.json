@@ -1,0 +1,17 @@
+{
+	"PRODUCT.CART.INMESSAGE": "already in your Cart.",
+	"PRODUCT.CART.MESSAGE": "added to your Cart.",
+	"PRODUCT.CARD.MORE": "More>>",
+	"PRODUCT.CARD.ADD": "Add to Cart",
+	"PRODUCT.LIST.EMPTY": "Your list is empty...",
+	"PRODUCT.LIST": "Product List",
+	"PRODUCT.CARD.REMOVE": "Remove from Cart",
+	"PRODUCT.ITEM": "Item",
+	"PRODUCT.DESCRIPTION": "Description",
+	"PRODUCT.CATEGORY": "Category",
+	"PRODUCT.PRICE": "Price",
+	"PRODUCT.RATING": "Rating",
+	"PRODUCT.CATEGORY.ALL": "All Categories",
+	"PRODUCT.TOTAL.PRICE": "Total Price",
+	"PRODUCT.TOTAL.ITEMS":"Total Items"
+}

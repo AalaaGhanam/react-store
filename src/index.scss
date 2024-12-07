@@ -1,0 +1,120 @@
+@import './utils/theme.scss';
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+
+	* {
+		&::-webkit-scrollbar {
+			width: 10px;
+		}
+
+		&::-webkit-scrollbar-track {
+			box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background: $cyprus;
+			border-radius: 5px;
+		}
+	}
+
+	body {
+		&::-webkit-scrollbar {
+			width: 5px;
+		}
+
+		&::-webkit-scrollbar-track {
+			box-shadow: inset 0 0 6px $tundora;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background: $gallery;
+			border-radius: 2px;
+		}
+	}
+
+	#root {
+		height: 100%;
+		font-size: 1.6rem;
+	}
+
+	.ant-table-thead .ant-table-cell,
+	.ant-descriptions-item-label {
+		background-color: $lightblue !important;
+		font-weight: bold !important;
+		color: $white;
+	}
+
+	.ant-input-affix-wrapper,
+	.ant-input-number-affix-wrapper,
+	.ant-select-selector,
+	.ant-picker,
+	.ant-input,
+	.ant-checkbox-inner {
+		border: none !important;
+	}
+
+	.ant-form-item-control-input,
+	.ant-checkbox {
+		border: 2px solid $darkGray70 !important;
+		border-radius: 2px;
+	}
+
+	.ant-form-item-control-input:hover,
+	.ant-checkbox:hover {
+		border-radius: 2px;
+		border: 2px solid $dodgerBlue !important;
+	}
+	.ant-tabs-tab-btn {
+		color: $black !important;
+	}
+	.ant-tabs-tab-btn:hover {
+		color: $red !important;
+	}
+	.ant-tabs-ink-bar {
+		color: $red !important;
+	}
+	.ant-tabs-tab.ant-tabs-tab-active {
+		border-bottom: 3px solid $red !important;
+		z-index: 2;
+		color: $red;
+	}
+
+	.ant-menu {
+		font-size: medium;
+		color: $white !important;
+		background: $darkblue;
+		font-family: 'Roboto', sans-serif;
+
+		.ant-menu-item a {
+			color: $white;
+		}
+		.ant-menu-item-selected a {
+			color: $blueSecondary;
+		}
+
+		.ant-menu-item:hover::before,
+		.ant-menu-item:hover::after,
+		.ant-menu-item-selected::after,
+		.ant-menu-item:active::after,
+		.ant-menu-overflow-item,
+		.ant-menu-horizontal {
+			border-bottom: none !important;
+			transition: none !important;
+			opacity: 0;
+		}
+
+		.ant-menu-horizontal .ant-menu-item::after {
+			border-bottom-style: none !important;
+			transition: none !important;
+			opacity: 0;
+		}
+
+		.ant-menu-horizontal,
+		.ant-menu-item::after,
+		.ant-menu-submenu::after {
+			border: none !important;
+		}
+	}
+}

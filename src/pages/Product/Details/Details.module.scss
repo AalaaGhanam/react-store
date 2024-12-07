@@ -1,0 +1,22 @@
+@import '../../../utils/theme.scss';
+
+.buttonWrapper {
+	justify-content: center !important;
+	display: flex;
+	padding-left: 1rem;
+	margin-bottom: 1rem !important;
+	.button {
+		width: 30% !important;
+	}
+}
+
+.descriptionWrapper {
+	justify-content: center !important;
+	display: flex;
+	width: 100%;
+	padding-left: 1rem;
+	padding-bottom: 3rem;
+	.image {
+		padding: '1rem'
+	}
+}
