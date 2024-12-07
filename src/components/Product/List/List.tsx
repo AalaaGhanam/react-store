@@ -54,7 +54,7 @@ const ListComponent = ({ productsItems, category, cart }: ListProps) => {
         onClick: async () => {
             const shoppingCart = getRecord(STORAGE.SHOPPING_CART)
             const inShoppingCart = shoppingCart?.filter(
-                (item: any) => item.id === Number(product.id)
+                (item: Product) => Number(item.id) === Number(product.id)
             )
             if (inShoppingCart?.length > 0) {
                 messageApi.open({
